@@ -43,6 +43,7 @@ class Controller {
             const {cantidad}= req.params;
             const data= await this.service.listarApiPalabraService(cantodad)
             res.status(200).send({Msg:data} )
+            //prueba
 
         }catch(error){
              res.status(422).send({errorMsg:"no valida"} )
